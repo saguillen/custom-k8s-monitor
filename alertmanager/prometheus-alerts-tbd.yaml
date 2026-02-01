@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: # To Be Completed
+  namespace: # To Be Completed
+  labels:
+    release: # To Be Completed
+spec:
+  groups:
+  - name: # To Be Completed
+    rules:
+    - alert: # To Be Completed
+      annotations:
+        description: # To Be Completed
+        summary: # To Be Completed
+      expr: |
+        # To Be Completed
+      for: # To Be Completed
+      labels:
+        severity: # To Be Completed
