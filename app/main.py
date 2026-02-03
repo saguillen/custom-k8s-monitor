@@ -16,7 +16,7 @@ items = {}
 
 # Custom metrics
 # TODO: REQUEST_COUNT - Count total HTTP requests with labels for method, status, and path
-REQUEST_COUNT = Counter('http_requests_total', 'Total HTTP Requests_total', 'Total HTTP Requests', ['method', 'status', 'path'])
+REQUEST_COUNT = Counter(name='http_requests_total', documentation='Total HTTP Requests_total', labelnames=['method', 'status', 'path'])
 REQUEST_LATENCY = Histogram('http_request_duration_seconds', 'HTTP Request Duration', ['method', 'status', 'path'])
 REQUEST_IN_PROGRESS = Gauge('http_requests_in_progress', 'HTTP Requests in progress', ['method', 'path'])
 
